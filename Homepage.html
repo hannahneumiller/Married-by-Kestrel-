@@ -1,1 +1,329 @@
-HelloPwincess
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Married by Kestrel</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+color:#444;
+background:#FAF7F2;
+line-height:1.7;
+}
+
+h1,h2{
+font-family:'Cormorant Garamond',serif;
+font-weight:600;
+color:#1B365D;
+}
+
+nav{
+position:absolute;
+width:100%;
+padding:35px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+z-index:10;
+}
+
+nav ul{
+display:flex;
+gap:40px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-size:15px;
+letter-spacing:1px;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:34px;
+}
+
+.hero{
+height:100vh;
+background:url("hero.jpg") center center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.35);
+}
+
+.hero-content{
+position:relative;
+color:white;
+max-width:750px;
+padding:20px;
+}
+
+.hero h1{
+font-size:72px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+font-weight:300;
+margin-bottom:40px;
+}
+
+.button{
+display:inline-block;
+padding:15px 36px;
+border:1px solid white;
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.button:hover{
+background:white;
+color:#444;
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:110px 10%;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:6px;
+}
+
+.about h2{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.services{
+text-align:center;
+}
+
+.services h2{
+font-size:48px;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:35px;
+}
+
+.card{
+padding:40px;
+border:1px solid #eee;
+}
+
+.card h3{
+margin-bottom:15px;
+font-family:'Cormorant Garamond',serif;
+font-size:30px;
+}
+
+.quote{
+background:#f8f5f2;
+text-align:center;
+padding:120px 15%;
+}
+
+.quote h2{
+font-size:50px;
+font-weight:400;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact h2{
+font-size:46px;
+margin-bottom:20px;
+}
+
+footer{
+padding:50px;
+text-align:center;
+font-size:14px;
+color:#888;
+}
+
+@media(max-width:800px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+    <img src="logo.png" alt="Married by Kestrel Logo">
+</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>Meaningful Ceremonies.<br>Authentically Yours.</h1>
+
+<p>
+Creating wedding ceremonies that are personal, joyful,
+and completely centered on your story.
+</p>
+
+<a href="#contact" class="button">
+Let's Get You Married!
+</a>
+
+</div>
+
+</header>
+
+<section id="about" class="about">
+
+<img src="officiant.jpg" alt="Wedding Officiant">
+
+<div>
+
+<h2>Hi, I'm Hannah Kestrel! I'm a wedding officiant based out of the New Hampshire seacoast, serving the New England region. </h2>
+
+<p>
+Your ceremony should feel like the most genuine part of your wedding day. It's the time that is exclusively about sharing your story, your relationship, and your commitment to each other. I've been practicing storytelling since high school and have extensive public speaking training thorugh debate, leadership, and law school. My role is to ensure your story is told in a way that reflects the people you are and the life you're building together!  
+</p>
+
+<p>
+  I unquestionably support queer love, and proivde services that are rooted in your relationship and general spirituality. I am not a good fit if you'd like religion in your ceremony. 
+</p>
+  
+<br>
+
+<p>
+Whether you're planning an intimate elopement, a mountaintop adventure, or a celebration surrounded by everyone you love, I will help create a ceremony that reflects who you are together.
+</p>
+
+</div>
+
+</section>
+
+<section id="services" class="services">
+
+<h2>How I Can Help</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Elopements</h3>
+<p>
+Simple, intimate ceremonies wherever your adventure takes you from the courthouse to a mountaintop.
+</p>
+</div>
+
+<div class="card">
+<h3>Weddings</h3>
+<p>
+Personalized ceremonies written specifically for your relationship to tell your story and highlight your promises to a life together.
+</p>
+</div>
+
+<div class="card">
+<h3>Vow Renewals</h3>
+<p>
+Celebrate your story and your love all over again.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="quote">
+
+<h2>
+"Every love story deserves a ceremony as unique as the people saying 'I do.'"
+</h2>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Let's Start Planning</h2>
+
+<p>
+I'd love to hear your love story and craft a ceremony to share it with those clsoest to you. 
+</p>
+
+<br>
+
+<a class="button" style="border-color:#444;color:#444;" href="mailto:marriedbykestrel@gmail.com">
+Inquire
+</a>
+
+</section>
+
+<footer>
+
+© 2026 Married by Kestrel
+
+</footer>
+
+</body>
+</html>
