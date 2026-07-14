@@ -1,200 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Married by Kestrel</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:'Inter',sans-serif;
-color:#444;
-background:#FAF7F2;
-line-height:1.7;
+
+    background:#FAF7F2;
+    color:#000;
+    font-family:'Libre Baskerville', serif;
+    line-height:1.8;
+
 }
 
-h1,h2{
-font-family:'Cormorant Garamond',serif;
-font-weight:600;
-color:#1B365D;
+header{
+
+    text-align:center;
+    padding:60px 20px 40px;
+
+}
+
+.logo img{
+
+    max-width:320px;
+    width:90%;
+    height:auto;
+
 }
 
 nav{
-position:absolute;
-width:100%;
-padding:35px 10%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-color:white;
-z-index:10;
-}
 
-nav ul{
-display:flex;
-gap:40px;
-list-style:none;
+    margin-top:30px;
+
 }
 
 nav a{
-text-decoration:none;
-color:white;
-font-size:15px;
-letter-spacing:1px;
+
+    color:#173A63;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:16px;
+    letter-spacing:1px;
+
 }
 
-.logo{
-font-family:'Cormorant Garamond',serif;
-font-size:34px;
-}
+nav a:hover{
 
-.hero{
-height:100vh;
-background:url("hero.jpg") center center/cover no-repeat;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-position:relative;
-}
+    text-decoration:underline;
 
-.hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,0,0,.35);
-}
-
-.hero-content{
-position:relative;
-color:white;
-max-width:750px;
-padding:20px;
-}
-
-.hero h1{
-font-size:72px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:20px;
-font-weight:300;
-margin-bottom:40px;
-}
-
-.button{
-display:inline-block;
-padding:15px 36px;
-border:1px solid white;
-color:white;
-text-decoration:none;
-transition:.3s;
-}
-
-.button:hover{
-background:white;
-color:#444;
 }
 
 section{
-max-width:1100px;
-margin:auto;
-padding:110px 10%;
+
+    max-width:1100px;
+    margin:auto;
+    padding:80px 8%;
+
+}
+
+h1,h2{
+
+    color:#173A63;
+    font-family:'Cormorant Garamond', serif;
+    margin-bottom:25px;
+
+}
+
+h1{
+
+    font-size:64px;
+
+}
+
+h2{
+
+    font-size:46px;
+
+}
+
+.intro{
+
+    text-align:center;
+
+}
+
+.intro p{
+
+    max-width:850px;
+    margin:auto;
+    font-size:19px;
+
 }
 
 .about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:70px;
-align-items:center;
+
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:70px;
+    align-items:center;
+
 }
 
 .about img{
-width:100%;
-border-radius:6px;
+
+    width:100%;
+    border-radius:8px;
+
 }
 
-.about h2{
-font-size:48px;
-margin-bottom:20px;
-}
+.offerings{
 
-.services{
-text-align:center;
-}
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
 
-.services h2{
-font-size:48px;
-margin-bottom:50px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:35px;
 }
 
 .card{
-padding:40px;
-border:1px solid #eee;
+
+    border:1px solid #d6d0c8;
+    padding:35px;
+    background:white;
+
 }
 
 .card h3{
-margin-bottom:15px;
-font-family:'Cormorant Garamond',serif;
-font-size:30px;
+
+    color:#173A63;
+    margin-bottom:15px;
+    font-size:28px;
+    font-family:'Cormorant Garamond', serif;
+
 }
 
-.quote{
-background:#f8f5f2;
-text-align:center;
-padding:120px 15%;
+.card p{
+
+    margin-bottom:15px;
+
 }
 
-.quote h2{
-font-size:50px;
-font-weight:400;
+.price{
+
+    font-weight:bold;
+    font-size:22px;
+
 }
 
 .contact{
-text-align:center;
+
+    max-width:700px;
+    margin:auto;
+
 }
 
-.contact h2{
-font-size:46px;
-margin-bottom:20px;
+label{
+
+    display:block;
+    margin-top:20px;
+    margin-bottom:8px;
+
+}
+
+input,
+textarea{
+
+    width:100%;
+    padding:14px;
+    border:1px solid #bbb;
+    background:white;
+    font-family:'Libre Baskerville', serif;
+    font-size:16px;
+
+}
+
+textarea{
+
+    min-height:180px;
+
+}
+
+button{
+
+    margin-top:30px;
+    background:#173A63;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    cursor:pointer;
+    font-size:16px;
+    font-family:'Libre Baskerville', serif;
+
+}
+
+button:hover{
+
+    background:#224d80;
+
 }
 
 footer{
-padding:50px;
-text-align:center;
-font-size:14px;
-color:#888;
+
+    text-align:center;
+    padding:50px;
+    font-size:14px;
+
 }
 
-@media(max-width:800px){
+@media(max-width:850px){
 
 .about{
+
 grid-template-columns:1fr;
+
 }
 
-.hero h1{
+.about img{
+
+max-width:350px;
+margin:auto;
+
+}
+
+nav a{
+
+display:block;
+margin:12px;
+
+}
+
+h1{
+
 font-size:48px;
+
 }
 
-nav ul{
-display:none;
+h2{
+
+font-size:38px;
+
 }
 
 }
@@ -205,117 +269,161 @@ display:none;
 
 <body>
 
-<nav>
+<header>
 
 <div class="logo">
-    <img src="logo.png" alt="Married by Kestrel Logo">
+<img src="logo.png" alt="Married by Kestrel Logo">
 </div>
 
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+<nav>
+
+<a href="#intro">Home</a>
+<a href="#about">About</a>
+<a href="#offerings">Offerings</a>
+<a href="#contact">Contact</a>
 
 </nav>
 
-<header class="hero">
+</header>
 
-<div class="hero-content">
+<section id="intro" class="intro">
 
-<h1>Meaningful Ceremonies.<br>Authentically Yours.</h1>
+<h1>Married by Kestrel</h1>
 
 <p>
-Creating wedding ceremonies that are personal, joyful,
-and completely centered on your story.
+
+Hi, I'm Hannah Kestrel, and I'm so happy you're here! 
+
+I'm a wedding officiant based in the New Hampshire seacoast, serving all of New England. Your ceremony is the heart of your special day and should be genuine, sincere, and a reflection of your relationship and commitment. My role is to help you share your story and enter your marriage in the way you want! 
+
+I've been practicing storytelling and speaking since high school with training in debate, persuasive speech, and as client-focused attorney. You are the stars of your day and I will ensure your love and commitments to each other are felt by all. 
+
+I firmly stand in support of human rights, queer love, and gay marriage - it would be my honor to marry you, whoever you are!!
+
 </p>
 
-<a href="#contact" class="button">
-Let's Get You Married!
-</a>
-
-</div>
-
-</header>
+</section>
 
 <section id="about" class="about">
 
-<img src="officiant.jpg" alt="Wedding Officiant">
+<img src="headshot.jpg" alt="Photo of Kestrel">
 
 <div>
 
-<h2>Hi, I'm Hannah Kestrel! I'm a wedding officiant based out of the New Hampshire seacoast, serving the New England region. </h2>
+<h2>About Me</h2>
 
 <p>
-Your ceremony should feel like the most genuine part of your wedding day. It's the time that is exclusively about sharing your story, your relationship, and your commitment to each other. I've been practicing storytelling since high school and have extensive public speaking training thorugh debate, leadership, and law school. My role is to ensure your story is told in a way that reflects the people you are and the life you're building together!  
-</p>
 
-<p>
-  I unquestionably support queer love, and proivde services that are rooted in your relationship and general spirituality. I am not a good fit if you'd like religion in your ceremony. 
-</p>
-  
-<br>
+A little more about me! I hope that you feel safe and supported by me and think it helps to get to know me a bit! I grew up in the Black Hills of South Dakota and believe that people, relationships, and experiences are at the center of a fulfilled life. I've admired the art of capturing those moments and stories whether thorugh journalism, podcasts, photography, or sharing reflectiosn and memories with friends. 
+Years ago while I was still in South Dakota, I thought about launching an officiant business; life got busy but in 2026 I had the honor of officiating a couple of my friends' weddings and was reinspired to start Married by Kestrel!
 
-<p>
-Whether you're planning an intimate elopement, a mountaintop adventure, or a celebration surrounded by everyone you love, I will help create a ceremony that reflects who you are together.
+I attended law school at the University of New Hampshire in Concord, NH and enjoy hiking, pickleball, and trying new recpies! I love hosting small dinners with friends, new expereinces, attending local events, and soaking up the beauty of daily life on the seacoast.
+
 </p>
 
 </div>
 
 </section>
 
-<section id="services" class="services">
+<section id="offerings">
 
-<h2>How I Can Help</h2>
+<h2>Ceremonies & Pricing</h2>
 
-<div class="cards">
+<div class="offerings">
+
+<p>
+    Before you commit (pun intended), I am happy to provide a free 15 minute Teams meeting to chat, get to know each other, and discuss a bit about your ceremony vision. If you decide to have me officiate, then we would exhange some paperwork and then share a drafted ceremony script to revise to ensure it's perfect for your day. 
+    For scheduling, it's best to reach out to me with your date and time and I'll get back to you with my availability. 
+
+    If your venue is further than 30 miles from Portsmouth, NH, there will be the additional cost at the current state rate per mile to and from the venue. For 2026, it is 72.5 cents per mile. 
+</p>
 
 <div class="card">
-<h3>Elopements</h3>
+
+<h3>Short & Sweet</h3>
+
 <p>
-Simple, intimate ceremonies wherever your adventure takes you from the courthouse to a mountaintop.
+
+Short, intimate ceremonies. Perfect for elopements or those looking for a short and sweet ceremony without too much talking, readings, or vows. Include drafting and rivising the script, a 15 minute call, and up to one hour attendance for the ceremony. 
+
 </p>
+
+<p class="price">
+
+Starting at $150 
+
+</p>
+
 </div>
 
 <div class="card">
-<h3>Weddings</h3>
+
+<h3>Wedding Ceremonies</h3>
+
 <p>
-Personalized ceremonies written specifically for your relationship to tell your story and highlight your promises to a life together.
+
+For the more traditional wedding ceremony. Perfect for those desiring a fuller ceremony sharing their love story, a reading, and personal vows. Includes drafting and revising the ceremony script, a 30 minute call, and up to an hour and a half ceremony attendance. 
+
 </p>
+
+<p class="price">
+
+Starting at $300
+
+</p>
+
 </div>
 
 <div class="card">
-<h3>Vow Renewals</h3>
+
+<h3>Custom Packages</h3>
+
 <p>
-Celebrate your story and your love all over again.
+
+The above are guidelines and suggestions for common wedding choices. I am happy to work with you to personalize your wedding whether you have a different vision for the ceremony, have a destination to travel to, or anything else!
 </p>
-</div>
 
 </div>
 
 </section>
 
-<section class="quote">
+<section id="contact">
 
-<h2>
-"Every love story deserves a ceremony as unique as the people saying 'I do.'"
-</h2>
+<div class="contact">
 
-</section>
+<h2>Contact Me</h2>
 
-<section id="contact" class="contact">
+<form>
 
-<h2>Let's Start Planning</h2>
+<label>Name</label>
 
-<p>
-I'd love to hear your love story and craft a ceremony to share it with those clsoest to you. 
-</p>
+<input type="text">
 
-<br>
+<label>Email</label>
 
-<a class="button" style="border-color:#444;color:#444;" href="mailto:marriedbykestrel@gmail.com">
-Inquire
-</a>
+<input type="email">
+
+<label>Wedding Date</label>
+
+<input type="date">
+
+<label>Venue or Location</label>
+
+<input type="text">
+
+<label>Tell Me About Your Wedding</label>
+
+<textarea></textarea>
+
+<button type="submit">
+
+Send Inquiry
+
+</button>
+
+</form>
+
+</div>
 
 </section>
 
@@ -326,4 +434,5 @@ Inquire
 </footer>
 
 </body>
+
 </html>
