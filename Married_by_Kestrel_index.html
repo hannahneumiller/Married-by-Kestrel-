@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Married by Kestrel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#FAF7F2;color:#111;font-family:'Libre Baskerville',serif;line-height:1.9}
+header{text-align:center;padding:50px 20px 30px;border-bottom:1px solid #ddd7cc}
+.logo img{max-width:340px;width:90%;height:auto}
+nav{margin-top:25px}
+nav a{color:#173A63;text-decoration:none;margin:0 18px}
+nav a:hover{text-decoration:underline}
+section{max-width:1100px;margin:auto;padding:80px 8%}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;color:#173A63}
+h1{font-size:62px;margin-bottom:20px}
+h2{font-size:44px;margin-bottom:25px}
+h3{font-size:32px;margin:40px 0 12px}
+.intro{text-align:center}
+.intro p{max-width:850px;margin:auto;font-size:18px}
+.about,.pricing-intro{display:grid;grid-template-columns:350px 1fr;gap:70px;align-items:center}
+.pricing-intro{grid-template-columns:1fr 350px;margin-bottom:50px}
+.about img,.pricing-intro img{width:100%;border-radius:8px}
+.offering{padding:28px 0;border-bottom:1px solid #ddd7cc}
+.offering:last-child{border-bottom:none}
+.price{font-weight:bold;color:#173A63;margin-top:10px}
+.contact{max-width:700px;margin:auto}
+label{display:block;margin:18px 0 8px}
+input,textarea{width:100%;padding:14px;border:1px solid #c8c2b8;font-family:'Libre Baskerville',serif}
+textarea{min-height:180px}
+button{margin-top:25px;background:#173A63;color:#fff;border:none;padding:14px 30px;cursor:pointer}
+footer{text-align:center;padding:40px;color:#555}
+@media(max-width:850px){
+.about,.pricing-intro{grid-template-columns:1fr}
+.about img,.pricing-intro img{max-width:350px;margin:auto}
+nav a{display:block;margin:10px 0}
+h1{font-size:46px}h2{font-size:36px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo"><img src="logo.png" alt="Married by Kestrel"></div>
+<nav>
+<a href="#intro">Home</a>
+<a href="#about">About</a>
+<a href="#offerings">Ceremonies & Pricing</a>
+<a href="scripts.html">Sample Ceremonies</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section id="intro" class="intro">
+<h1>Married by Kestrel</h1>
+<p>Replace this paragraph with your welcome message. Introduce your philosophy, your approach to creating meaningful ceremonies, and what couples can expect when they work with you.</p>
+</section>
+
+<section id="about" class="about">
+<img src="headshot.png" alt="Headshot">
+<div>
+<h2>About Me</h2>
+<p>Replace this section with your biography. Share your story, your values, and what inspires you as a wedding officiant.</p>
+</div>
+</section>
+
+<section id="offerings">
+<h2>Ceremonies & Pricing</h2>
+<div class="pricing-intro">
+<div>
+<p>Every ceremony I officiate is thoughtfully written to reflect your relationship, values, and vision for your wedding day. Replace this with your own introduction to your services.</p>
+</div>
+<img src="boothbay.png" alt="Ceremony">
+</div>
+
+<div class="offering">
+<h3>Short & Sweet</h3>
+<p>Perfect for intimate weddings and elopements. Includes consultation, custom script, and officiating.</p>
+<div class="price">Starting at $150</div>
+</div>
+
+<div class="offering">
+<h3>Wedding Ceremony</h3>
+<p>A fully personalized ceremony with storytelling, vows, and a custom script.</p>
+<div class="price">Starting at $300</div>
+</div>
+
+<div class="offering">
+<h3>Custom Packages</h3>
+<p>Travel, rehearsals, destination weddings, vow coaching, and custom ceremony options.</p>
+<div class="price">Contact for Pricing</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<h2>Contact Me</h2>
+<form>
+<label>Name</label><input type="text">
+<label>Email</label><input type="email">
+<label>Wedding Date</label><input type="date">
+<label>Venue & Location</label><input type="text">
+<label>Tell Me About Your Ceremony Vision</label><textarea></textarea>
+<button type="submit">Send Inquiry</button>
+</form>
+</div>
+</section>
+<footer>© 2026 Married by Kestrel</footer>
+</body></html>
