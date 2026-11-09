@@ -1,145 +1,474 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Married by Kestrel | New England Wedding Officiant</title>
+
 <meta name="description" content="Custom wedding ceremonies by Hannah Kestrel, a New Hampshire wedding officiant serving New Hampshire, Maine, Massachusetts, Vermont, Rhode Island, and all of New England.">
+
 <meta name="keywords" content="New Hampshire wedding officiant, Portsmouth NH officiant, Maine wedding officiant, New England wedding officiant, elopement officiant, LGBTQ wedding officiant">
+
 <meta name="author" content="Hannah Kestrel">
+
 <meta property="og:title" content="Married by Kestrel">
 <meta property="og:description" content="Personalized wedding ceremonies throughout New England.">
-<meta property="og:image" content="https://YOURUSERNAME.github.io/YOURREPO/logo.png">
+<meta property="og:image" content="logo.png">
 <meta property="og:type" content="website">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:#FAF7F2;color:#111;font-family:'Libre Baskerville',serif;line-height:1.9}
-header{text-align:center;padding:50px 20px 30px;border-bottom:1px solid #ddd7cc}
-.logo img{max-width:340px;width:90%;height:auto}
-nav{margin-top:25px}
-nav a{color:#173A63;text-decoration:none;margin:0 18px}
-nav a:hover{text-decoration:underline}
-section{max-width:1100px;margin:auto;padding:80px 8%}
-h1,h2,h3{font-family:'Cormorant Garamond',serif;color:#173A63}
-h1{font-size:62px;margin-bottom:20px}
-h2{font-size:44px;margin-bottom:25px}
-h3{font-size:32px;margin:40px 0 12px}
-.intro{text-align:center}
-.intro p{max-width:850px;margin:auto;font-size:18px}
-.about,.pricing-intro{display:grid;grid-template-columns:350px 1fr;gap:70px;align-items:center}
-.pricing-intro{grid-template-columns:1fr 350px;margin-bottom:50px}
-.about img,.pricing-intro img{width:100%;border-radius:8px}
-.offering{padding:28px 0;border-bottom:1px solid #ddd7cc}
-.offering:last-child{border-bottom:none}
-.price{font-weight:bold;color:#173A63;margin-top:10px}
-.contact{max-width:700px;margin:auto}
-label{display:block;margin:18px 0 8px}
-input,textarea{width:100%;padding:14px;border:1px solid #c8c2b8;font-family:'Libre Baskerville',serif}
-textarea{min-height:180px}
-button{margin-top:25px;background:#173A63;color:#fff;border:none;padding:14px 30px;cursor:pointer}
-footer{text-align:center;padding:40px;color:#555}
-@media(max-width:850px){
-.about,.pricing-intro{grid-template-columns:1fr}
-.about img,.pricing-intro img{max-width:350px;margin:auto}
-nav a{display:block;margin:10px 0}
-h1{font-size:46px}h2{font-size:36px}
+
+/* GENERAL STYLING */
+
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
+
+html {
+scroll-behavior:smooth;
+}
+
+body {
+background:#FAF7F2;
+color:#111;
+font-family:'Libre Baskerville',serif;
+line-height:1.9;
+}
+
+header {
+text-align:center;
+padding:50px 20px 30px;
+border-bottom:1px solid #ddd7cc;
+}
+
+.logo img {
+max-width:340px;
+width:90%;
+height:auto;
+}
+
+nav {
+margin-top:25px;
+}
+
+nav a {
+color:#173A63;
+text-decoration:none;
+margin:0 18px;
+}
+
+nav a:hover {
+text-decoration:underline;
+}
+
+section {
+max-width:1100px;
+margin:auto;
+padding:80px 8%;
+}
+
+/* HEADINGS */
+
+h1,h2,h3 {
+font-family:'Cormorant Garamond',serif;
+color:#173A63;
+}
+
+h1 {
+font-size:62px;
+margin-bottom:20px;
+}
+
+h2 {
+font-size:44px;
+margin-bottom:25px;
+}
+
+h3 {
+font-size:32px;
+margin:40px 0 12px;
+}
+
+/* INTRODUCTION */
+
+.intro {
+text-align:center;
+}
+
+.intro p {
+max-width:850px;
+margin:auto;
+font-size:18px;
+}
+
+/* ABOUT ME */
+
+.about {
+display:grid;
+grid-template-columns:350px 1fr;
+gap:70px;
+align-items:stretch;
+}
+
+.about-photos {
+display:grid;
+grid-template-rows:1fr 1fr;
+gap:15px;
+min-height:450px;
+}
+
+.about-photos img {
+width:100%;
+height:100%;
+min-height:0;
+object-fit:cover;
+border-radius:8px;
+}
+
+/* CEREMONIES AND PRICING */
+
+.pricing-intro {
+display:grid;
+grid-template-columns:1fr 350px;
+gap:70px;
+align-items:center;
+margin-bottom:50px;
+}
+
+.pricing-intro img {
+width:100%;
+border-radius:8px;
+}
+
+.offering {
+padding:28px 0;
+border-bottom:1px solid #ddd7cc;
+}
+
+.offering:last-child {
+border-bottom:none;
+}
+
+.price {
+font-weight:bold;
+color:#173A63;
+margin-top:10px;
+}
+
+/* CONTACT SECTION */
+
+.contact-layout {
+display:grid;
+grid-template-columns:1fr 350px;
+gap:55px;
+align-items:center;
+}
+
+.contact {
+width:100%;
+margin:auto;
+}
+
+.contact-photo img {
+width:100%;
+height:480px;
+object-fit:cover;
+border-radius:8px;
+}
+
+/* FORM */
+
+label {
+display:block;
+margin:18px 0 8px;
+}
+
+input,textarea {
+width:100%;
+padding:14px;
+border:1px solid #c8c2b8;
+font-family:'Libre Baskerville',serif;
+background:#fff;
+}
+
+textarea {
+min-height:180px;
+}
+
+button {
+margin-top:25px;
+background:#173A63;
+color:#fff;
+border:none;
+padding:14px 30px;
+cursor:pointer;
+font-family:'Libre Baskerville',serif;
+}
+
+button:hover {
+background:#244d7b;
+}
+
+/* FOOTER */
+
+footer {
+text-align:center;
+padding:40px;
+color:#555;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media(max-width:850px) {
+
+.about,
+.pricing-intro,
+.contact-layout {
+grid-template-columns:1fr;
+}
+
+.about-photos {
+max-width:350px;
+margin:auto;
+min-height:0;
+grid-template-rows:auto auto;
+}
+
+.about-photos img {
+height:auto;
+max-height:400px;
+}
+
+.pricing-intro img {
+max-width:350px;
+margin:auto;
+}
+
+.contact-photo {
+max-width:350px;
+margin:30px auto 0;
+}
+
+.contact-photo img {
+height:auto;
+max-height:450px;
+}
+
+nav a {
+display:block;
+margin:10px 0;
+}
+
+h1 {
+font-size:46px;
+}
+
+h2 {
+font-size:36px;
+}
+
+}
+
 </style>
 </head>
+
 <body>
+
+<!-- HEADER -->
+
 <header>
-<div class="logo"><img src="logo.png" alt="Married by Kestrel"></div>
+
+<div class="logo">
+<img src="logo.png" alt="Married by Kestrel">
+</div>
+
 <nav>
 <a href="#intro">Home</a>
 <a href="#about">About</a>
 <a href="#offerings">Ceremonies & Pricing</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
 
+
+<!-- INTRODUCTION -->
+
 <section id="intro" class="intro">
+
 <h1>Married by Kestrel</h1>
+
 <p>
-Hi, I'm Hannah Kestrel (she/her), and I'm so happy you're here! 
+Hi, I'm Hannah Kestrel (she/her), and I'm so happy you're here!
 
-I'm a wedding officiant based in the New Hampshire seacoast, serving all of New England. Your ceremony is the heart of your special day and should be genuine, sincere, and a reflection of your relationship and commitment. My role is to help you share your story and enter your marriage in the way you want! 
+I'm a wedding officiant based in the New Hampshire seacoast, serving all of New England. Your ceremony is the heart of your special day and should be genuine, sincere, and a reflection of your relationship and commitment. My role is to help you share your story and enter your marriage in the way you want!
 
-I've been practicing storytelling and speaking since high school with training in debate, persuasive speech, and as a client-focused attorney. You are the stars of your day and I will ensure your love and commitments to each other are felt by all. 
+I've been practicing storytelling and speaking since high school with training in debate, persuasive speech, and as a client-focused attorney. You are the stars of your day and I will ensure your love and commitments to each other are felt by all.
 
 I firmly stand in support of human rights, queer love, and gay marriage - it would be my honor to marry you, whoever you are!!
-
 </p>
+
 </section>
 
+
+<!-- ABOUT ME -->
+
 <section id="about" class="about">
-<img src="headshot.PNG" alt="Headshot">
+
+<div class="about-photos">
+
+<img src="headshot.PNG" alt="Hannah Kestrel portrait">
+
+<img src="the dress.JPEG" alt="Hannah Kestrel in a floral dress">
+
+</div>
+
 <div>
+
 <h2>About Me</h2>
+
 <p>
-A little more about me! I hope that you feel safe and supported by me and think it helps to get to know me a bit! I grew up in the Black Hills of South Dakota and believe that people, relationships, and experiences are at the center of a fulfilled life. I've admired the art of capturing those moments and stories whether through journalism, podcasts, photography, or sharing reflections and memories with friends. 
+A little more about me! I hope that you feel safe and supported by me and think it helps to get to know me a bit! I grew up in the Black Hills of South Dakota and believe that people, relationships, and experiences are at the center of a fulfilled life. I've admired the art of capturing those moments and stories whether through journalism, podcasts, photography, or sharing reflections and memories with friends.
+
 Years ago while I was still in South Dakota, I thought about launching an officiant business; life got busy, but in 2026 I had the honor of officiating a couple of my friends' weddings and was reinspired to start Married by Kestrel!
 
 I attended law school at the University of New Hampshire in Concord, NH and enjoy hiking, pickleball, and trying new recipes! I love hosting small dinners with friends, new experiences, attending local events, and soaking up the beauty of daily life on the seacoast.
 </p>
+
 </div>
+
 </section>
 
+
+<!-- CEREMONIES AND PRICING -->
+
 <section id="offerings">
+
 <h2>Ceremonies & Pricing</h2>
+
 <div class="pricing-intro">
+
 <div>
-<p>Every ceremony I officiate is thoughtfully written to reflect your relationship, values, and vision for your wedding day. Whether you're planning an intimate
-        elopement or celebrating with family and friends, I'll work with you to create
-        a ceremony that feels authentic and uniquely yours.
-    
-    Before you commit (pun intended), I am happy to provide a free 15 minute Teams meeting to chat, get to know each other, and discuss a bit about your ceremony vision. If you decide to have me officiate, we would exhange some paperwork and then collaborate on a drafted ceremony script to revise to ensure it's perfect for your day. 
-    For wedding booking, it's best to reach out to me with your date and time and I'll confirm my availability. 
-</p>
-        
+
 <p>
-    If your venue is further than 25 miles from Portsmouth, NH, there will be the additional cost at the current state rate per mile to and from the venue. For 2026, it is 72.5 cents per mile. 
+Every ceremony I officiate is thoughtfully written to reflect your relationship, values, and vision for your wedding day. Whether you're planning an intimate elopement or celebrating with family and friends, I'll work with you to create a ceremony that feels authentic and uniquely yours.
+
+Before you commit (pun intended), I am happy to provide a free 15 minute Teams meeting to chat, get to know each other, and discuss a bit about your ceremony vision. If you decide to have me officiate, we would exhange some paperwork and then collaborate on a drafted ceremony script to revise to ensure it's perfect for your day.
+
+For wedding booking, it's best to reach out to me with your date and time and I'll confirm my availability.
 </p>
-</div>
-<img src="boothbay.png" alt="Ceremony">
+
+<p>
+If your venue is further than 25 miles from Portsmouth, NH, there will be the additional cost at the current state rate per mile to and from the venue. For 2026, it is 72.5 cents per mile.
+</p>
+
 </div>
 
+<img src="boothbay.png" alt="Ceremony in Boothbay">
+
+</div>
+
+
 <div class="offering">
+
 <h3>Short & Sweet</h3>
-<p>Perfect for intimate weddings and elopements. Includes consultation, custom script, and one hour of wedding day attendance.</p>
+
+<p>
+Perfect for intimate weddings and elopements. Includes consultation, custom script, and one hour of wedding day attendance.
+</p>
+
 <div class="price">Starting at $150</div>
+
 </div>
 
+
 <div class="offering">
+
 <h3>Wedding Ceremony</h3>
-<p>For a longer, more traditional wedding ceremony incluidng a reading, your love story, an activity, and vows.Includes a fully personalized ceremony and an hour and a half of wedding day attendance.</p>
+
+<p>
+For a longer, more traditional wedding ceremony including a reading, your love story, an activity, and vows. Includes a fully personalized ceremony and an hour and a half of wedding day attendance.
+</p>
+
 <div class="price">Starting at $300</div>
+
 </div>
 
+
 <div class="offering">
+
 <h3>Custom Packages</h3>
+
 <p>
 The above are guidelines and suggestions for common wedding choices. I want to work with you to personalize your wedding whether you have a different vision for the ceremony, have a destination to travel to, or anything else!
 </p>
+
 <div class="price">Contact for Pricing</div>
+
 </div>
+
 </section>
 
+
+<!-- CONTACT -->
+
 <section id="contact">
+
+<div class="contact-layout">
+
 <div class="contact">
+
 <h2>Contact Me</h2>
+
 <form>
-<label>Name</label><input type="text">
-<label>Email</label><input type="email">
-<label>Wedding Date</label><input type="date">
-<label>Venue & Location</label><input type="text">
-<label>Tell Me About Your Ceremony Vision</label><textarea></textarea>
+
+<label>Name</label>
+<input type="text" name="name">
+
+<label>Email</label>
+<input type="email" name="email">
+
+<label>Wedding Date</label>
+<input type="date" name="wedding-date">
+
+<label>Venue & Location</label>
+<input type="text" name="venue">
+
+<label>Tell Me About Your Ceremony Vision</label>
+<textarea name="ceremony-vision"></textarea>
+
 <button type="submit">Send Inquiry</button>
+
 </form>
+
 </div>
+
+
+<div class="contact-photo">
+
+<img src="on wtf.JPEG" alt="Hannah hiking in the mountains">
+
+</div>
+
+</div>
+
 </section>
-<footer>© 2026 Married by Kestrel</footer>
-</body></html>
+
+
+<!-- FOOTER -->
+
+<footer>
+© 2026 Married by Kestrel
+</footer>
+
+</body>
+</html>
